@@ -13,6 +13,7 @@
         <scene sceneID="LnT-lA-Oa3">
             <objects>
                 <viewController id="Cdz-oi-N5r" customClass="ViewController" customModule="playgame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="2if-Cz-8lE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

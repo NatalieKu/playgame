@@ -183,7 +183,7 @@ class ViewController: UIViewController {
         gamestatusLabel.text = gameState.status
         switch gameState {
         case .start:
-            view.backgroundColor = UIColor.cyan
+            view.backgroundColor = #colorLiteral(red: 0.6487160218, green: 0.9100599009, blue: 1, alpha: 1)
             let speechUtterance =  AVSpeechUtterance(string: "黑白配,男生女生配")
             speechUtterance.voice = AVSpeechSynthesisVoice(language:"zh-TW")
             let synth = AVSpeechSynthesizer()
@@ -191,7 +191,7 @@ class ViewController: UIViewController {
              opponentImage.image = UIImage(named:"base")
             
         case .win:
-            view.backgroundColor = UIColor.green
+            view.backgroundColor = #colorLiteral(red: 0.574222358, green: 0.8862745166, blue: 0.6728555015, alpha: 1)
             
             winPoint = winPoint + 10
             
@@ -199,7 +199,8 @@ class ViewController: UIViewController {
             
             
         case .draw:
-            view.backgroundColor = UIColor.magenta
+            view.backgroundColor = #colorLiteral(red: 1, green: 0.8083013433, blue: 0.8348716025, alpha: 1)
+            
             drawPoint = drawPoint + 1
             
             pointLabel.text = "得分: \(winPoint), 沒中: \(drawPoint)"
